@@ -1,0 +1,234 @@
+1)
+import java.util.Scanner;
+
+class kiran{
+    public static void main(String []arg)
+    {
+        Scanner scan=new Scanner(System.in);
+        int a=scan.nextInt();
+        int b=scan.nextInt();
+        System.out.println(a+b);
+        System.out.println(a-b);
+        System.out.println(a*b);
+        System.out.println(a%b);
+        System.out.println(a/b);
+    }
+}
+
+2)
+import java.util.Scanner;
+
+class kiran{
+    public static void main(String []arg)
+    {
+        Scanner scan=new Scanner(System.in);
+        int a=scan.nextInt();
+        int b=scan.nextInt();
+        System.out.print(a/b);
+    }
+}
+
+3)
+import java.util.Scanner;
+
+class kiran{
+    public static void main(String []arg)
+    {
+        Scanner scan=new Scanner(System.in);
+        int a=scan.nextInt();
+        int b=scan.nextInt();
+        String result=(a<b)?"a is small":"b is small";
+        System.out.print(result);
+    }
+}
+
+4)
+import java.util.Scanner;
+
+class kiran{
+    public static void main(String []arg)
+    {
+        Scanner scan=new Scanner(System.in);
+        int a=scan.nextInt();
+        int b=scan.nextInt();
+        String result=(a>50&&b>75)?"student pass":"student fail";
+        System.out.print(result);
+    }
+}
+
+5)
+import java.util.Scanner;
+
+class kiran{
+    public static void main(String []args)
+    {
+        Scanner scan=new Scanner(System.in);
+        int a=scan.nextInt();
+        if(a%3==0&&a%5==0)
+        {
+            System.out.println("true");
+        }
+        else
+        {
+            System.out.println("false");
+        }
+    }
+
+}
+
+question 
+1. Driving Licence Eligibility
+Write a Java program to read a person's age and determine whether they are eligible for a driving licence.
+●	The minimum age is 18.
+●	Use a relational operator and a ternary operator.
+●	Display Eligible or Not Eligible.
+
+
+import java.util.Scanner;
+
+class licence{
+    public static void main(String []arg)
+    {
+        Scanner scan=new Scanner(System.in);
+        int age=scan.nextInt();
+        String result=(age>18)?"eligible":"not eligible";
+        System.out.print(result);
+    }
+}
+
+2. Even Number and Range Checker
+Write a program to read an integer and check whether it is even and greater than 10.
+●	Use the modulus operator.
+●	Combine the conditions using &&.
+●	Display an appropriate message.
+
+
+import java.util.Scanner;
+
+class kiran{
+    public static void main(String []arg)
+    {
+        Scanner scan=new Scanner(System.in);
+        int a=scan.nextInt();
+        String result=(a%2==0&&a>10)?"number is even and greater":"number is not even and greater";
+        System.out.print(result);
+    }
+}	
+
+
+3. Student Pass Checker
+Write a program to read a student's mark and attendance percentage.
+●	Marks must be at least 40.
+●	Attendance must be at least 75%.
+●	Use logical AND and a ternary operator to display Pass or Fail.
+
+
+import java.util.Scanner;
+
+class kiran{
+    public static void main(String []arg)
+    {
+        Scanner scan=new Scanner(System.in);
+        int a=scan.nextInt();
+        int b=scan.nextInt();
+        if(a>=40 && b>=75){
+        System.out.print("pass");
+        }
+        else{
+            System.out.print("fail");
+        }
+    }
+}
+
+
+4. Shopping Discount Eligibility
+Write a program to read a purchase amount and membership status.
+●	A customer receives a discount if the purchase amount is at least ₹2,000 or the customer is a premium member.
+●	Use || to determine eligibility.
+●	Display Discount Available or No Discount.
+
+
+import java.util.Scanner;
+
+class kiran{
+    public static void main(String []arg)
+    {
+        Scanner scan=new Scanner(System.in);
+        int purchase=scan.nextInt();
+        scan.nextLine();
+        String premium=scan.nextLine();
+        if(purchase>=2000 || premium.equalsIgnoreCase("yes")){
+        System.out.print("Discount available");
+        }
+        else{
+            System.out.print("No Discount");
+        }
+    }
+}
+
+
+5. Password Length Validator
+Write a Java program to read a password and check whether its length is at least 8 characters.
+●	Use the length() method.
+●	Combine the length condition with a Boolean variable representing whether the account is active.
+●	Use && and a ternary operator to display the result.
+
+
+
+import java.util.Scanner;
+
+class kiran{
+    public static void main(String []arg)
+    {
+        Scanner scan=new Scanner(System.in);
+        String a=scan.nextLine();
+        boolean active=true;
+        String result=(a.length()>=8 && active)?"valid":"invalid";
+        System.out.print(result);
+        }
+    }
+
+6. ATM Withdrawal Validation
+Write a program to read the account balance and withdrawal amount.
+A transaction is accepted only when:
+●	The withdrawal amount is positive.
+●	The amount is divisible by 100.
+●	The amount does not exceed the account balance.
+Use short-circuit AND to validate the transaction. Deduct the amount only when the transaction is valid.
+
+
+import java.util.Scanner;
+
+class kiran{
+    public static void main(String []arg)
+    {
+        Scanner scan=new Scanner(System.in);
+        int accountbalance=scan.nextInt();
+        int withdraw=scan.nextInt();
+        String result=( accountbalance>=withdraw && withdraw%100==0)?"take":"not have";
+        System.out.print(result);
+        }
+    }
+
+
+7. Login Attempt Controller
+Write a program that accepts a maximum attempt count and the current failed attempts.
+●	If the current failed attempts are below the maximum, allow the user to attempt login.
+●	If the login fails, increment the failed-attempt count.
+●	Display whether the next attempt is allowed or the account is locked.
+Use relational, unary, assignment and logical operators.
+
+
+
+import java.util.Scanner;
+
+class kiran{
+    public static void main(String []arg)
+    {
+        Scanner scan=new Scanner(System.in);
+        int max=scan.nextInt();
+        int fail=scan.nextInt();
+        String result=( max<=3 && fail<=3)?"take":"not have";
+        System.out.print(result);
+        }
+    }

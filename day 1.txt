@@ -1,0 +1,91 @@
+1)
+class main{
+ public static void main(String []arg)
+{ 
+  System.out.println("hello world");
+}
+}
+
+2)
+public class kiran{
+  public static void main(String[] args){
+
+  double a=10.1;
+  int b=20;
+  double c=a+b;
+
+  System.out.print(c);
+}
+}
+
+3)
+public class kiran{
+  public static void main(String[] args){
+
+ int age=21;
+
+  System.out.print(age);
+}
+}
+
+4)
+class student{
+      String name;
+      int age;
+}
+public class kiran{
+   public static void main(String args[]){
+   
+   student s1=new student();
+   s1.name="kogul";
+   s1.age=21;
+   
+   student s2=new student();
+   s2.name="kiran";
+   s2.age=20;
+
+   System.out.println(s1.name);
+   System.out.println(s2.name);
+}
+}
+
+5)
+import java.util.Scanner;
+
+public class kiran{
+    public static void main(String []arg){
+        Scanner a=new Scanner(System.in);
+        int b=a.nextInt();
+    }
+}
+
+6)import java.util.Scanner;
+
+public class kiran{
+    public static void main(String []arg){
+        Scanner scan=new Scanner(System.in);
+        int age=scan.nextInt();
+        scan.nextLine();
+        String name=scan.nextLine();
+        System.out.println("my age is: "+age);
+        System.out.println("my name is: "+name);
+       
+    }
+}
+
+6)
+import java.util.Scanner;
+
+public class kiran{
+    public static void main(String []arg){
+        Scanner scan=new Scanner(System.in);
+        System.out.print("enter your age ");
+        int age=scan.nextInt();
+        scan.nextLine();
+        System.out.print("enter your name ");
+        String name=scan.nextLine();
+        System.out.println("my age is: "+age);
+        System.out.println("my name is: "+name);
+       
+    }
+}
