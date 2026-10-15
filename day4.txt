@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+class Kiran {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Enter your mark: ");
+        int mark = scan.nextInt();
+
+       switch (mark / 10) {
+    case 10:
+        System.out.println("grade A");
+        break;
+    case 9:
+        System.out.println("grade B");
+        break;
+    case 8:
+        System.out.println("grade C");
+        break;
+    case 7:
+        System.out.println("grade D");
+        break;
+    case 6:
+        System.out.println("grade E");
+        break;
+    case 5:
+        System.out.println("grade F");
+        break;
+    case 4:
+        System.out.println("grade G");
+        break;
+    default:
+        System.out.println("Fail");
+}
+        scan.close();
+    }
+}
+
+
+2)
+class Kiran {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 50; i++) {
+            System.out.println(i);
+        }
+    }
+}
+
+3)
+class Kiran {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 100; i+=2) {
+            System.out.println(i);
+        }
+    }
+}
