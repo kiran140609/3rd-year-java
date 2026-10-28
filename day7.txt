@@ -1,0 +1,125 @@
+1)element at which place
+
+
+import java.util.Scanner;
+class Kiran {
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        int target=scan.nextInt();
+        int[] arr = {10, 20, 30, 40, 50};
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                System.out.print("Element found at index: " + i);
+                break;
+            }
+        }
+    }
+}
+
+
+
+
+2)element count
+
+class Kiran {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+        int count=0;
+        int target=50;
+
+        for (int i = 0; i < arr.length; i++) {
+            count+=1;
+            if (arr[i] == target) {
+                System.out.print("Element found at index: " + i);
+                break;
+            }
+        }
+    }
+}
+
+
+3)largest value in array
+
+
+class Kiran {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+        int largest=arr[0];
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > largest) {
+                largest=arr[i];
+            }
+        }
+        System.out.print("Element found at index: " + largest);
+    }
+}
+
+
+
+4)lowest value in array
+
+
+
+class Kiran {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+        int lowest=arr[0];
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < lowest) {
+                lowest=arr[i];
+            }
+        }
+        System.out.print("Element found at index: " + lowest);
+    }
+}
+
+
+
+5)second lowest value
+
+
+
+class Kiran {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+
+        int lowest = Integer.MAX_VALUE;
+        int secondlowest = Integer.MAX_VALUE;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < lowest) {
+                secondlowest = lowest;
+                lowest = arr[i];
+            }
+            else if (arr[i] < secondlowest && arr[i] != lowest) {
+                secondlowest = arr[i];
+            }
+        }
+
+        System.out.println("Lowest: " + lowest);
+        System.out.println("Second lowest: " + secondlowest);
+    }
+}
+
+
+6)
+
+class Kiran {
+    public static void main(String[] args) {
+        int[][] arr = {
+            {10, 20, 30},
+            {40, 50, 60},
+            {70, 80, 90}
+        };
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
